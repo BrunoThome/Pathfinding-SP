@@ -155,16 +155,6 @@ var linhas = {
                     'Palmeiras_barra_funda'
                 ]
             }
-            {
-                id: 'Palmeiras_barra_funda',
-                name: 'Palmeiras - Barra Funda',
-                pointX: 5.5,
-                pointY: -0.8,
-                estacoes_adjacentes: [
-                    'Agua_Branca',
-                    'lapa'
-                ]
-            }
              
         ]
     },
