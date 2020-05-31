@@ -1,5 +1,4 @@
-var linhas = {
-    'linha_rubi': {
+var linha_rubi =  {
         color: '#f5f10a',
         circle_color: '#0001',
         estacoes: [
@@ -84,7 +83,7 @@ var linhas = {
                     'caieiras',
                     'Vila_Aurora'
                 ]
-            }
+            },
             {
                 id: 'Vila_Aurora',
                 name: 'Vila Aurora',
@@ -94,7 +93,7 @@ var linhas = {
                     'perus',
                     'jaragua'
                 ]
-            }
+            },
             {
                 id: 'jaragua',
                 name: 'Jaraguá',
@@ -104,7 +103,7 @@ var linhas = {
                     'Vila_Aurora',
                     'Vila_Clarice'
                 ]
-            }
+            },
             {
                 id: 'Vila_Clarice',
                 name: 'Vila Clarice',
@@ -114,7 +113,7 @@ var linhas = {
                     'jaragua',
                     'pirituba'
                 ]
-            }
+            },
             {
                 id: 'pirituba',
                 name: 'Pirituba',
@@ -124,7 +123,7 @@ var linhas = {
                     'Vila_Clarice',
                     'piqueri'
                 ]
-            }
+            },
             {
                 id: 'piqueri',
                 name: 'Piqueri',
@@ -134,7 +133,7 @@ var linhas = {
                     'pirituba',
                     'lapa'
                 ]
-            }
+            },
             {
                 id: 'lapa',
                 name: 'Lapa',
@@ -144,7 +143,7 @@ var linhas = {
                     'piqueri',
                     'Agua_Branca'
                 ]
-            }
+            },
             {
                 id: 'Agua_Branca',
                 name: 'Água Branca',
@@ -157,4 +156,4 @@ var linhas = {
             }
              
         ]
-    },
+}

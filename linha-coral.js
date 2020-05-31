@@ -1,5 +1,4 @@
-var linha_coral = {
-    'linha_coral': {
+var linha_coral =  {
         color: '#f5f10a',
         circle_color: '#0001',
         estacoes: [
@@ -105,4 +104,3 @@ var linha_coral = {
             }
         ]
     }
-}

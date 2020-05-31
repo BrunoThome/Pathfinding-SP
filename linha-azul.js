@@ -1,5 +1,4 @@
-var linha_azul ={
-    'linha_azul': {
+var linha_azul = {
         color: '#0000FF',
         circle_color: '#0001',
         estacoes: [
@@ -176,4 +175,3 @@ var linha_azul ={
              
         ]
     }
-}

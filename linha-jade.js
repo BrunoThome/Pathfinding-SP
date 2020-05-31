@@ -1,5 +1,4 @@
 var linha_jade = {
-    'linha_jade': {
         color: '#f5f10a',
         circle_color: '#0001',
         estacoes: [
@@ -24,4 +23,3 @@ var linha_jade = {
             },
         ]
     }
-}

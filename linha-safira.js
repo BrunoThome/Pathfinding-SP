@@ -1,5 +1,4 @@
-var linhas = {
-    'linha_safira': {
+var linha_safira = {
         color: '#f5f10a',
         circle_color: '#0001',
         estacoes: [
@@ -88,4 +87,3 @@ var linhas = {
             },
         ]
     }
-}

@@ -1,4 +1,4 @@
-var linha vermelha ={
+var linha_vermelha ={
 	color: '#8b0000',
         circle_color: '#0001',
         estacoes: [
