@@ -1,6 +1,6 @@
 var linha_amarela =  {
     color: '#f5f10a',
-    circle_color: '#0001',
+    circle_color: '#000',
     estacoes: [
         {
             id: 'sp_morumbi',
@@ -13,19 +13,18 @@ var linha_amarela =  {
         }, {
             id: 'butanta',
             name: 'Butantã',
-            pointX: 1,
+            pointX: 1.06,
             pointY: 0,
             estacoes_adjacentes: [
-                'sp_morumbi',
-                'pinheiros'
+                'pinheiros',
+                
             ]
         }, {
             id: 'faria_lima',
             name: 'Faria Lima',
-            pointX: 2.5,
+            pointX: 2.58,
             pointY: 0,
             estacoes_adjacentes: [
-                'pinheiros',
                 'fradique_coutinho'
             ]
         }, {
@@ -34,52 +33,46 @@ var linha_amarela =  {
             pointX: 3,
             pointY: 0,
             estacoes_adjacentes: [
-                'faria_lima',
                 'oscar_freire'
             ]
         }, {
             id: 'oscar_freire',
             name: 'Oscar Freire',
-            pointX: 3.5,
+            pointX: 3.38,
             pointY: 0,
             estacoes_adjacentes: [
-                'fradique_coutinho',
                 'paulista'
             ]
         }, {
             id: 'paulista',
             name: 'Paulista',
-            pointX: 4,
-            pointY: -0.15,
+            pointX: 3.66,
+            pointY: -0.12,
             estacoes_adjacentes: [
-                'oscar_freire',
                 'higienopolis'
             ]
         }, {
             id: 'higienopolis',
             name: 'Higienópolis',
-            pointX: 4.5,
-            pointY: -0.30,
+            pointX: 4.16,
+            pointY: -0.62,
             estacoes_adjacentes: [
-                'paulista',
                 'republica'
             ]
         }, {
             id: 'republica',
             name: 'Republica',
-            pointX: 5,
-            pointY: -0.45,
+            pointX: 4.66,
+            pointY: -1.12,
             estacoes_adjacentes: [
-                'higienopolis',
                 'luz'
             ]
         }, {
             id: 'luz',
             name: 'Luz',
-            pointX: 5.5,
-            pointY: -0.60,
+            pointX: 5.16,
+            pointY: -1.62,
             estacoes_adjacentes: [
-                'republica',
             ]
         }
     ]

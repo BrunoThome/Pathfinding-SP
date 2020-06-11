@@ -1,6 +1,6 @@
 var linha_lilas = {
     color: '#A7349D',
-    circle_color: '#0001',
+    circle_color: '#000',
     estacoes: [
         {
             id: 'Capao_Redondo',
@@ -17,7 +17,7 @@ var linha_lilas = {
             pointY: 1.05,
             estacoes_adjacentes: [
                 'Capao_Redondo',
-                'Vila_das_Belezas'
+                'Vila_das_Belezas',
             ]
         }, {
             id: 'Vila_das_Belezas',

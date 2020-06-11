@@ -1,23 +1,21 @@
 var especial_points = {
-    circle_color: '#0001',
+    circle_color: '#000',
     estacoes: [
         {
             id: 'pinheiros',
             name: 'Pinheiros',
-            pointX: 2,
+            pointX: 2.12,
             pointY: 0,
             estacoes_adjacentes: [
-                'cidade_universitaria',
                 'hebraica',
-                'butanta',
                 'faria_lima'
             ]
         },{
             id: 'osasco',
             name: 'Osasco',
-            pointX: 1.75,
+            pointX: 1.86,
             color: "#00A88E",
-            pointY: -0.60,
+            pointY: -1.35,
             estacoes_adjacentes: [
                 'com_sampaio',
                 "pres_altino"
@@ -25,8 +23,8 @@ var especial_points = {
         },{
             id: 'pres_altino',
             name: "Pres. Altino",
-            pointX: 2,
-            pointY: -0.60,
+            pointX: 2.06,
+            pointY: -1.35,
             estacoes_adjacentes: [
                 "osasco",
                 "ceasa",

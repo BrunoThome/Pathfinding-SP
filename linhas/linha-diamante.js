@@ -1,6 +1,6 @@
 var linha_diamante =  {
         color: '#666',
-        circle_color: '#0001',
+        circle_color: '#000',
         estacoes: [
             {
                 id: 'amador_bueno',
@@ -16,7 +16,6 @@ var linha_diamante =  {
                 pointX: -1.2,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'amador_bueno',
                     'itapevi'
                 ]
             }, {
@@ -25,7 +24,6 @@ var linha_diamante =  {
                 pointX: -1,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'santa_rita',
                     'eng_cardoso'                    
 
                 ]
@@ -35,7 +33,6 @@ var linha_diamante =  {
                 pointX: -0.8,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'itapevi',
                     'sagrado_coracao'
                 ]
             }, {
@@ -44,7 +41,6 @@ var linha_diamante =  {
                 pointX: -0.6,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'eng_cardoso',
                     'jandira'
                 ]
             }, {
@@ -53,7 +49,6 @@ var linha_diamante =  {
                 pointX: -0.4,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'sagrado_coracao',
                     'jardim_silveira'
                 ]
             }, {
@@ -62,7 +57,6 @@ var linha_diamante =  {
                 pointX: -0.2,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'jandira',
                     'jardim_belval'
                 ]
             }, {
@@ -71,7 +65,6 @@ var linha_diamante =  {
                 pointX: 0,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'jardim_silveira',
                     'barueri'
                 ]
             }, {
@@ -80,7 +73,6 @@ var linha_diamante =  {
                 pointX: 0.2,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'jardim_belval',
                     'antonio_joao'
                 ]
             }, {
@@ -89,7 +81,6 @@ var linha_diamante =  {
                 pointX: 0.4,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'barueri',
                     'santa_terezinha'
                 ]
             },{
@@ -98,7 +89,6 @@ var linha_diamante =  {
                 pointX: 0.6,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'antonio_joao',
                     'carapicuiba'
                 ]
             },{
@@ -107,8 +97,7 @@ var linha_diamante =  {
                 pointX: 0.8,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'santa_terezinha',
-                    'gen_miguel_costa'
+                    'gen_miguel_costa',
                 ]
             },{
                 id: 'gen_miguel_costa',
@@ -116,7 +105,6 @@ var linha_diamante =  {
                 pointX: 1,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'carapicuiba',
                     'quitauna'
                 ]
             },{
@@ -125,7 +113,6 @@ var linha_diamante =  {
                 pointX: 1.25,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'gen_miguel_costa',
                     'com_sampaio'
                 ]
             },{
@@ -134,7 +121,6 @@ var linha_diamante =  {
                 pointX: 1.5,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'quitauna',
                     'osasco'
                 ]
             },{
@@ -143,7 +129,6 @@ var linha_diamante =  {
                 pointX: 2.6,
                 pointY: -0.7,
                 estacoes_adjacentes: [
-                    'pres_altino',
                     'domingo_de_moraes'
                 ]
             },{
@@ -152,7 +137,6 @@ var linha_diamante =  {
                 pointX: 2.9,
                 pointY: -0.7,
                 estacoes_adjacentes: [
-                    'imperatriz_leopoldina',
                     'lapa2'
                 ]
             },{
@@ -161,7 +145,6 @@ var linha_diamante =  {
                 pointX: 3.2,
                 pointY: -0.7,
                 estacoes_adjacentes: [
-                    'domingo_de_moraes',
                     'palmeiras_barra_funda'
                     
                 ]

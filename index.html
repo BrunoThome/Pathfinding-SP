@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
+  <style>
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input#changeNosAbertos:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input#changeNosAbertos:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input#changeNosFechados:checked + .slider {
+    background-color: #EC7000;
+  }
+  
+  input#changeNosFechados:focus + .slider {
+    box-shadow: 0 0 1px #EC7000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  </style>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="../src/sigma.core.js"></script>
+  <script src="../src/conrad.js"></script>
+  <script src="../src/utils/sigma.utils.js"></script>
+  <script src="../src/utils/sigma.polyfills.js"></script>
+  <script src="../src/sigma.settings.js"></script>
+  <script src="../src/classes/sigma.classes.dispatcher.js"></script>
+  <script src="../src/classes/sigma.classes.configurable.js"></script>
+  <script src="../src/classes/sigma.classes.graph.js"></script>
+  <script src="../src/classes/sigma.classes.camera.js"></script>
+  <script src="../src/classes/sigma.classes.quad.js"></script>
+  <script src="../src/classes/sigma.classes.edgequad.js"></script>
+  <script src="../src/captors/sigma.captors.mouse.js"></script>
+  <script src="../src/captors/sigma.captors.touch.js"></script>
+  <script src="../src/renderers/sigma.renderers.canvas.js"></script>
+  <script src="../src/renderers/sigma.renderers.webgl.js"></script>
+  <script src="../src/renderers/sigma.renderers.svg.js"></script>
+  <script src="../src/renderers/sigma.renderers.def.js"></script>
+  <script src="../src/renderers/webgl/sigma.webgl.nodes.def.js"></script>
+  <script src="../src/renderers/webgl/sigma.webgl.nodes.fast.js"></script>
+  <script src="../src/renderers/webgl/sigma.webgl.edges.def.js"></script>
+  <script src="../src/renderers/webgl/sigma.webgl.edges.fast.js"></script>
+  <script src="../src/renderers/webgl/sigma.webgl.edges.arrow.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.labels.def.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.hovers.def.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.nodes.def.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.edges.def.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.edges.curve.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.edges.arrow.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.edges.curvedArrow.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.edgehovers.def.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.edgehovers.curve.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.edgehovers.arrow.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js"></script>
+  <script src="../src/renderers/canvas/sigma.canvas.extremities.def.js"></script>
+  <script src="../src/renderers/svg/sigma.svg.utils.js"></script>
+  <script src="../src/renderers/svg/sigma.svg.nodes.def.js"></script>
+  <script src="../src/renderers/svg/sigma.svg.edges.def.js"></script>
+  <script src="../src/renderers/svg/sigma.svg.edges.curve.js"></script>
+  <script src="../src/renderers/svg/sigma.svg.labels.def.js"></script>
+  <script src="../src/renderers/svg/sigma.svg.hovers.def.js"></script>
+  <script src="../src/middlewares/sigma.middlewares.rescale.js"></script>
+  <script src="../src/middlewares/sigma.middlewares.copy.js"></script>
+  <script src="../src/misc/sigma.misc.animation.js"></script>
+  <script src="../src/misc/sigma.misc.bindEvents.js"></script>
+  <script src="../src/misc/sigma.misc.bindDOMEvents.js"></script>
+  <script src="../src/misc/sigma.misc.drawHovers.js"></script>
+
+  <script src="../plugins/sigma.renderers.edgeLabels/settings.js"></script>
+  <script src="../plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.def.js"></script>
+  <script src="../plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.curve.js"></script>
+  <script src="../plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.curvedArrow.js"></script>
+
+  <script src="linhas/especial-points.js"></script>
+  <script src="linhas/linha-amarela.js"></script>
+  <script src="linhas/linha-azul.js"></script>
+  <script src="linhas/linha-coral.js"></script>
+  <script src="linhas/linha-diamante.js"></script>
+  <script src="linhas/linha-esmeralda.js"></script>
+  <script src="linhas/linha-jade.js"></script>
+  <script src="linhas/linha-lilas.js"></script>
+  <script src="linhas/linha-prata.js"></script>
+  <script src="linhas/linha-rubi.js"></script>
+  <script src="linhas/linha-safira.js"></script>
+  <script src="linhas/linha-turquesa.js"></script>
+  <script src="linhas/linha-verde.js"></script>
+  <script src="linhas/linha-vermelha.js"></script>
+  <div id="container" class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="control" id="control1" value="inicio" checked>
+          <label class="form-check-label" for="control1">Inicio - <span id="startNode"></span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="control" id="control2" value="fim">
+          <label class="form-check-label" for="control2">Fim - <span id="endNode"></span></label>
+        </div>
+      <button type="button" class="btn btn-primary" onclick="startButton()">Calcular</button>
+        <button type="button"  class="btn btn-primary"  onclick="resetButton()">Resetar</button>
+      </div>
+      <div class="col-3" >
+        <div class="row d-flex justify-content-around" style="border-bottom: 1px solid #eee;">
+          <h6>Lista Nós abertos</h6> 
+          <label class="switch">
+            <input type="checkbox" id="changeNosAbertos" onchange="handleDestacarAbertos(this)">
+            <span class="slider round"></span>
+          </label>
+        </div>
+       
+        <ul id="openList" style="height: 20vh; overflow-y: scroll;">
+
+        </ul>
+      </div>
+
+      <div class="col-3" >
+        <div class="row d-flex justify-content-around" style="border-bottom: 1px solid #eee;">
+          <h6>Lista Nós Fechados</h6> 
+          <label class="switch">
+            <input type="checkbox" id="changeNosFechados" onchange="handleDestacarFechados(this)">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <ul id="closedList" style="height: 20vh; overflow-y: scroll;">
+
+        </ul>
+      </div>
+      <div class="col-3" >
+        <h6>Custo total = <span id="totalValue">0</span> Unidades de Medida</h6>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12" id="graph-container" style="height: 80vh;"></div>
+    </div>
+  </div>
+
+
+  <script src="find_path.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
