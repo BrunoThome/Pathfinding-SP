@@ -1,70 +1,80 @@
 var linha_verde = {
-    color: '#f5f10a',
-    circle_color: '#0001',
+    color: '#00855e',
+    circle_color: '#000',
     estacoes: [
         {
             id: 'vila_madalena',
             name: 'Vila Madalena',
-            pointX: 1,
-            pointY: 0,
+            pointX: 3.4,
+            pointY: -1.1,
             estacoes_adjacentes: [
                 'sumare'
             ]
         }, {
             id: 'sumare',
             name: 'Sumaré',
-            pointX: 1.5,
-            pointY: 0,
+            pointX: 3.66,
+            pointY: -0.82,
             estacoes_adjacentes: [
-                'vila_madalena',
                 'clinicas'
             ]
         }, {
             id: 'clinicas',
             name: 'Clínicas',
-            pointX: 2,
-            pointY: 0,
+            pointX: 3.94,
+            pointY: -0.54,
             estacoes_adjacentes: [
                 'consolacao',
-                'sumare',
+
+            ]
+        }, {
+            id: 'consolacao',
+            name: 'Consolação',
+            pointX: 4.36,
+            pointY: -0.12,
+            estacoes_adjacentes: [
+                'trianon_masp'
 
             ]
         }, {
             id: 'trianon_masp',
             name: 'Trianon - Masp',
-            pointX: 2.5,
-            pointY: 0,
+            pointX: 4.98,
+            pointY: 0.3,
             estacoes_adjacentes: [
-                'consolacao',
                 'brigadeiro'
             ]
         }, {
             id: 'brigadeiro',
             name: 'Brigadeiro',
-            pointX: 3,
-            pointY: 0,
+            pointX: 5.38,
+            pointY: 0.70,
             estacoes_adjacentes: [
-                'trianon_masp',
                 'paraiso'
             ]
         }, {
             id: 'santos_imigrantes',
             name: 'Santos - Imigrantes',
-            pointX: 3.5,
-            pointY: 0,
+            pointX: 7.30,
+            pointY: 1.76,
             estacoes_adjacentes: [
-                'chacara_klabin',
                 'alto_do_ipiranga'
             ]
         }, {
             id: 'alto_do_ipiranga',
             name: 'Alto do Ipiranga',
-            pointX: 4,
-            pointY: -0.2,
+            pointX: 8.2,
+            pointY: 1.32,
             estacoes_adjacentes: [
                 'sacoma',
-                'santos_imigrantes'
             ]
-        },
+        },{
+            id: 'sacoma',
+            name: 'Sacomã',
+            pointX: 8.72,
+            pointY: 0.82,
+            estacoes_adjacentes: [
+            ]
+        }
     ]
 }
