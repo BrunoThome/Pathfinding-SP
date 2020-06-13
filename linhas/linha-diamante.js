@@ -62,7 +62,7 @@ var linha_diamante =  {
             }, {
                 id: 'jardim_belval',
                 name: 'Jardim Belval',
-                pointX: -0.1,
+                pointX: -0.06,
                 pointY: -1.96,
                 estacoes_adjacentes: [
                     'barueri'
