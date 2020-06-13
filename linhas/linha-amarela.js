@@ -59,14 +59,6 @@ var linha_amarela =  {
             estacoes_adjacentes: [
                 'republica'
             ]
-        }, {
-            id: 'republica',
-            name: 'Republica',
-            pointX: 5.2,
-            pointY: -1.3,
-            estacoes_adjacentes: [
-                'luz'
-            ]
         }
     ]
 }
