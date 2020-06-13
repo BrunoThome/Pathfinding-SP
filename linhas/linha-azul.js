@@ -1,6 +1,6 @@
 var linha_azul = {
         color: '#0000FF',
-        circle_color: '#0001',
+        circle_color: '#000',
         estacoes: [
             {
                 id: 'tucuruvi',
@@ -16,7 +16,6 @@ var linha_azul = {
                 pointX: 1.5,
                 pointY: 0,
                 estacoes_adjacentes: [
-                    'Tucuruvi',
                     'jardim_sao_paulo_ayrton_senna'
                 ]
             }, {
@@ -25,7 +24,6 @@ var linha_azul = {
                 pointX: 2,
                 pointY: 0,
                 estacoes_adjacentes: [
-                    'parada_inglesa',
                     'santana' 
                 ]
             }, {
@@ -34,7 +32,6 @@ var linha_azul = {
                 pointX: 2.5,
                 pointY: 0,
                 estacoes_adjacentes: [
-                    'jardim_sao_paulo_ayrton_senna',
                     'carandiru'
                 ]
             }, {
@@ -43,7 +40,6 @@ var linha_azul = {
                 pointX: 3,
                 pointY: 0,
                 estacoes_adjacentes: [
-                    'santana',
                     'portuguesa_tiete'
                 ]
             }, {
@@ -52,7 +48,6 @@ var linha_azul = {
                 pointX: 3.5,
                 pointY: 0,
                 estacoes_adjacentes: [
-                    'santana',
                     'armenia'
                 ]
             }, {
@@ -61,7 +56,6 @@ var linha_azul = {
                 pointX: 4,
                 pointY: -0.2,
                 estacoes_adjacentes: [
-                    'portuguesa_tiete',
                     'tiradentes'
                 ]
             }, {
@@ -70,7 +64,6 @@ var linha_azul = {
                 pointX: 4.5,
                 pointY: -0.4,
                 estacoes_adjacentes: [
-                    'armenia',
                     'luz'
                 ]
             }, {
@@ -79,7 +72,6 @@ var linha_azul = {
                 pointX: 5,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'luz',
                     'se'
                 ]
             },
@@ -89,7 +81,6 @@ var linha_azul = {
                 pointX: 5,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'se',
                     'sao_joaquim'
                 ]
             },
@@ -99,7 +90,6 @@ var linha_azul = {
                 pointX: 5,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'japao_liberdade',
                     'vergueiro'
                 ]
             },
@@ -109,7 +99,6 @@ var linha_azul = {
                 pointX: 5,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'sao_joaquim',
                     'paraiso'
                 ]
             },
@@ -119,7 +108,6 @@ var linha_azul = {
                 pointX: 5,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'ana_rosa',
                     'santa_cruz'
                 ]
             },
@@ -129,7 +117,6 @@ var linha_azul = {
                 pointX: 5,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'santa_cruz',
                     'saude'
                 ]
             },
@@ -139,7 +126,6 @@ var linha_azul = {
                 pointX: 5,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'praca_da_arvore',
                     'sao_judas'
                 ]
             },
@@ -149,7 +135,6 @@ var linha_azul = {
                 pointX: 5,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'saude',
                     'conceisao'
                 ]
             },
@@ -159,7 +144,6 @@ var linha_azul = {
                 pointX: 5,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'sao_judas',
                     'jabaquara'
                 ]
             },
@@ -169,7 +153,6 @@ var linha_azul = {
                 pointX: 5,
                 pointY: -0.6,
                 estacoes_adjacentes: [
-                    'sao_judas'
                 ]
             }
              

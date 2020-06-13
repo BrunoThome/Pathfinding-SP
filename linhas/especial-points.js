@@ -66,6 +66,30 @@ var especial_points = {
                 'lapa2',
                 'julio_prestes'
             ]
+        }, {
+            id: 'se',
+            name: 'Sé',
+            pointX: 3.5,
+            pointY: -0.7,
+            estacoes_adjacentes: [
+                'japao_liberdade',
+            ]
+        }, {
+            id: 'paraiso',
+            name: 'Paraiso',
+            pointX: 3.5,
+            pointY: -0.7,
+            estacoes_adjacentes: [
+                'ana_rosa',
+            ]
+        }, {
+            id: 'ana_rosa',
+            name: 'Ana Rosa',
+            pointX: 3.5,
+            pointY: -0.7,
+            estacoes_adjacentes: [
+                'vila_mariana',
+            ]
         }
     ]
 }

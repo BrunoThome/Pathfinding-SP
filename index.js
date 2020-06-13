@@ -22,7 +22,7 @@ var i,
 var linhas = [
 	especial_points,
 	linha_amarela,
-	//linha_azul,
+	linha_azul,
 	//linha_coral,
 	linha_diamante,
 	linha_esmeralda,
@@ -37,7 +37,10 @@ var linhas = [
 ]
 
 
-function calcularCustoG(startNode, endNode = receivedEndNode) {
+function calcularCustoG(startNode, endNode) {
+	if(!startNode || !endNode){
+		console.log("eerro")
+	}
 	let custo_x = Math.pow(startNode.pointX - endNode.x, 2)
 	let custo_y = Math.pow(startNode.pointY - endNode.y, 2)
 	return Math.sqrt(custo_x + custo_y)
