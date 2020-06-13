@@ -54,9 +54,10 @@ var especial_points = {
         }, {
             id: 'chacara_klabin',
             name: 'Chacará Klabin',
-            pointX: 5.1,
-            pointY: 0.3,
+            pointX: 6.78,
+            pointY: 1.7,
             estacoes_adjacentes: [
+                'santos_imigrantes'
             ]
         }, {
             id: 'palmeiras_barra_funda',
@@ -81,6 +82,7 @@ var especial_points = {
             pointY: 1.08,
             estacoes_adjacentes: [
                 'ana_rosa',
+                'chacara_klabin'
             ]
         }, {
             id: 'ana_rosa',

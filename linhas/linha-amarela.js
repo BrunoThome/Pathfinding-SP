@@ -49,7 +49,8 @@ var linha_amarela =  {
             pointX: 4.08,
             pointY: -0.12,
             estacoes_adjacentes: [
-                'higienopolis'
+                'higienopolis',
+                'consolacao'
             ]
         }, {
             id: 'higienopolis',
