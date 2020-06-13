@@ -154,7 +154,7 @@ var linha_diamante =  {
                 pointX: 3.8,
                 pointY: -0.7,
                 estacoes_adjacentes: [
-                    'palmeiras_barra_funda'                    
+                    'palmeiras_barra_funda',                   
                 ]
             }
         ]

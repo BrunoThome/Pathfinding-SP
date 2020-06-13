@@ -13,7 +13,7 @@ var linha_amarela =  {
         }, {
             id: 'butanta',
             name: 'Butantã',
-            pointX: 1.06,
+            pointX: 0.96,
             pointY: 0,
             estacoes_adjacentes: [
                 'pinheiros',
@@ -22,7 +22,7 @@ var linha_amarela =  {
         }, {
             id: 'faria_lima',
             name: 'Faria Lima',
-            pointX: 2.58,
+            pointX: 2.7,
             pointY: 0,
             estacoes_adjacentes: [
                 'fradique_coutinho'
@@ -30,7 +30,7 @@ var linha_amarela =  {
         }, {
             id: 'fradique_coutinho',
             name: 'Fradique Coutinho',
-            pointX: 3,
+            pointX: 3.22,
             pointY: 0,
             estacoes_adjacentes: [
                 'oscar_freire'
@@ -38,7 +38,7 @@ var linha_amarela =  {
         }, {
             id: 'oscar_freire',
             name: 'Oscar Freire',
-            pointX: 3.38,
+            pointX: 3.7,
             pointY: 0,
             estacoes_adjacentes: [
                 'paulista'
@@ -46,7 +46,7 @@ var linha_amarela =  {
         }, {
             id: 'paulista',
             name: 'Paulista',
-            pointX: 3.66,
+            pointX: 4.08,
             pointY: -0.12,
             estacoes_adjacentes: [
                 'higienopolis'
@@ -54,16 +54,16 @@ var linha_amarela =  {
         }, {
             id: 'higienopolis',
             name: 'Higienópolis',
-            pointX: 4.16,
-            pointY: -0.62,
+            pointX: 4.68,
+            pointY: -0.74,
             estacoes_adjacentes: [
                 'republica'
             ]
         }, {
             id: 'republica',
             name: 'Republica',
-            pointX: 4.66,
-            pointY: -1.12,
+            pointX: 5.2,
+            pointY: -1.3,
             estacoes_adjacentes: [
                 'luz'
             ]

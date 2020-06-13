@@ -6,15 +6,15 @@ var linha_lilas = {
             id: 'Capao_Redondo',
             name: 'Capão Redondo',
             pointX: 0,
-            pointY: 1.05,
+            pointY: 3.22,
             estacoes_adjacentes: [
                 'Campo_Limpo'
             ]
         }, {
             id: 'Campo_Limpo',
             name: 'Campo Limpo',
-            pointX: 0.5,
-            pointY: 1.05,
+            pointX: 0.4,
+            pointY: 3.22,
             estacoes_adjacentes: [
                 'Capao_Redondo',
                 'Vila_das_Belezas',
@@ -22,8 +22,8 @@ var linha_lilas = {
         }, {
             id: 'Vila_das_Belezas',
             name: 'Vila das Belezas',
-            pointX: 1,
-            pointY: 1.05,
+            pointX: 0.92,
+            pointY: 3.22,
             estacoes_adjacentes: [
                 'Campo_Limpo',
                 'Giovanni_Gronchi',
@@ -33,7 +33,7 @@ var linha_lilas = {
             id: 'Giovanni_Gronchi',
             name: 'Giovanni Gronchi',
             pointX: 1.5,
-            pointY: 1.05,
+            pointY: 3.22,
             estacoes_adjacentes: [
                 'Vila_das_Belezas',
                 'santo_amaro'
@@ -41,8 +41,8 @@ var linha_lilas = {
         }, {
             id: 'Largo_Treze',
             name: 'Largo Treze',
-            pointX: 2.3,
-            pointY: 1.05,
+            pointX: 2.46,
+            pointY: 3.22,
             estacoes_adjacentes: [
                 'santo_amaro',
                 'Adolfo_Pinheiro'
@@ -50,8 +50,8 @@ var linha_lilas = {
         }, {
             id: 'Adolfo_Pinheiro',
             name: 'Adolfo Pinheiro',
-            pointX: 2.6,
-            pointY: 1.05,
+            pointX: 2.84,
+            pointY: 3.22,
             estacoes_adjacentes: [
                 'Largo_Treze',
                 'Alto_da_Boa_Vista'
@@ -59,8 +59,8 @@ var linha_lilas = {
         }, {
             id: 'Alto_da_Boa_Vista',
             name: 'Alto da Boa Vista',
-            pointX: 2.9,
-            pointY: 1.05,
+            pointX: 3.22,
+            pointY: 3.22,
             estacoes_adjacentes: [
                 'Adolfo_Pinheiro',
                 'Borba_Gato'
@@ -68,8 +68,8 @@ var linha_lilas = {
         }, {
             id: 'Borba_Gato',
             name: 'Borba Gato',
-            pointX: 3.2,
-            pointY: 1.05,
+            pointX: 3.56,
+            pointY: 3.22,
             estacoes_adjacentes: [
                 'Alto_da_Boa_Vista',
                 'brooklin'
@@ -77,8 +77,8 @@ var linha_lilas = {
         }, {
             id: 'brooklin',
             name: 'Brooklin',
-            pointX: 3.5,
-            pointY: 1.05,
+            pointX: 3.9,
+            pointY: 3.22,
             estacoes_adjacentes: [
                 'Borba_Gato',
                 'Campo_Belo'
@@ -87,8 +87,8 @@ var linha_lilas = {
         {
             id: 'Campo_Belo',
             name: 'Campo Belo',
-            pointX: 3.9,
-            pointY: 1.05,
+            pointX: 4.38,
+            pointY: 3.22,
             estacoes_adjacentes: [
                 'brooklin',
                 'eucalipto'
@@ -97,8 +97,8 @@ var linha_lilas = {
         {
             id: 'eucalipto',
             name: 'Eucalipto',
-            pointX: 4.1,
-            pointY: 0.9,
+            pointX: 4.7,
+            pointY: 3.1,
             estacoes_adjacentes: [
                 'Campo_Belo',
                 'moema'
@@ -107,8 +107,8 @@ var linha_lilas = {
         {
             id: 'moema',
             name: 'Moema',
-            pointX: 4.3,
-            pointY: 0.75,
+            pointX: 5,
+            pointY: 2.8,
             estacoes_adjacentes: [
                 'eucalipto',
                 'AACD_Servidor'
@@ -117,8 +117,8 @@ var linha_lilas = {
         {
             id: 'AACD_Servidor',
             name: 'AACD - Servidor',
-            pointX: 4.5,
-            pointY: 0.6,
+            pointX: 5.26,
+            pointY: 2.54,
             estacoes_adjacentes: [
                 'moema',
                 'Hospital_SP'
@@ -127,8 +127,8 @@ var linha_lilas = {
         {
             id: 'Hospital_SP',
             name: 'Hospital São Paulo',
-            pointX: 4.7,
-            pointY: 0.45,
+            pointX: 5.56,
+            pointY: 2.24,
             estacoes_adjacentes: [
                 'AACD_Servidor',
                 'santa_cruz'
