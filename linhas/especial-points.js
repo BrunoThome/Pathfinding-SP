@@ -44,11 +44,12 @@ var especial_points = {
         }, {
             id: 'santa_cruz',
             name: 'Santa Cruz',
-            pointX: 4.9,
-            pointY: 0.45,
+            pointX: 5.94,
+            pointY: 2.22,
             color: '#A7349D',
             estacoes_adjacentes: [
                 "chacara_klabin",
+                "praca_da_arvore"
             ]
         }, {
             id: 'chacara_klabin',
@@ -68,26 +69,35 @@ var especial_points = {
         }, {
             id: 'se',
             name: 'Sé',
-            pointX: 3.5,
-            pointY: -0.7,
+            pointX: 5.94,
+            pointY: -1.24,
             estacoes_adjacentes: [
                 'japao_liberdade',
             ]
         }, {
             id: 'paraiso',
             name: 'Paraiso',
-            pointX: 3.5,
-            pointY: -0.7,
+            pointX: 5.94,
+            pointY: 1.08,
             estacoes_adjacentes: [
                 'ana_rosa',
             ]
         }, {
             id: 'ana_rosa',
             name: 'Ana Rosa',
-            pointX: 3.5,
-            pointY: -0.7,
+            pointX: 5.94,
+            pointY: 1.44,
             estacoes_adjacentes: [
                 'vila_mariana',
+            ]
+        }, {
+            id: 'luz',
+            name: 'Luz',
+            pointX: 5.94,
+            pointY: -2.02,
+            estacoes_adjacentes: [
+                'sao_bento'
+                
             ]
         }
     ]
