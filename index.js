@@ -29,7 +29,7 @@ var linhas = [
 	//linha_jade,
 	linha_lilas,
 	//linha_prata,
-	//linha_rubi,
+	linha_rubi,
 	//linha_safira,
 	linha_turquesa,
 	linha_verde,

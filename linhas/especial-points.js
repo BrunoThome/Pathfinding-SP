@@ -65,7 +65,8 @@ var especial_points = {
             pointX: 4.56,
             pointY: -2.2,
             estacoes_adjacentes: [
-                'julio_prestes'
+                'julio_prestes',
+                'luz'
             ]
         }, {
             id: 'se',
@@ -96,7 +97,7 @@ var especial_points = {
             id: 'luz',
             name: 'Luz',
             pointX: 5.94,
-            pointY: -2.02,
+            pointY: -2.32,
             estacoes_adjacentes: [
                 'sao_bento'
                 
