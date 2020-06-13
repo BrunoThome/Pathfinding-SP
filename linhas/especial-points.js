@@ -60,10 +60,9 @@ var especial_points = {
         }, {
             id: 'palmeiras_barra_funda',
             name: 'Palmeiras - Barra funda',
-            pointX: 3.5,
-            pointY: -0.7,
+            pointX: 4.56,
+            pointY: -2.2,
             estacoes_adjacentes: [
-                'lapa2',
                 'julio_prestes'
             ]
         }, {
