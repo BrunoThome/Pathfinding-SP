@@ -82,7 +82,6 @@ var especial_points = {
             pointY: 1.08,
             estacoes_adjacentes: [
                 'ana_rosa',
-                'chacara_klabin'
             ]
         }, {
             id: 'ana_rosa',
@@ -91,6 +90,7 @@ var especial_points = {
             pointY: 1.44,
             estacoes_adjacentes: [
                 'vila_mariana',
+                'chacara_klabin'
             ]
         }, {
             id: 'luz',
@@ -100,6 +100,14 @@ var especial_points = {
             estacoes_adjacentes: [
                 'sao_bento'
                 
+            ]
+        }, {
+            id: 'tamanduatei',
+            name: 'Tamanduateí',
+            pointX: 9.28,
+            pointY: 0.24,
+            estacoes_adjacentes: [
+                'Sao_Caetano_Sul'
             ]
         }
     ]
