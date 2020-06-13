@@ -28,7 +28,7 @@ var linhas = [
 	linha_esmeralda,
 	//linha_jade,
 	linha_lilas,
-	//linha_prata,
+	linha_prata,
 	//linha_rubi,
 	//linha_safira,
 	//linha_turquesa,
