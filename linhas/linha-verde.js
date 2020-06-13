@@ -74,6 +74,7 @@ var linha_verde = {
             pointX: 8.72,
             pointY: 0.82,
             estacoes_adjacentes: [
+                'tamanduatei'
             ]
         }
     ]
