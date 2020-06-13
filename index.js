@@ -32,7 +32,7 @@ var linhas = [
 	//linha_rubi,
 	//linha_safira,
 	//linha_turquesa,
-	//linha_verde,
+	linha_verde,
 	//linha_vermelha
 ]
 
