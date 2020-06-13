@@ -70,7 +70,7 @@ var linha_amarela =  {
         }, {
             id: 'luz',
             name: 'Luz',
-            pointX: 5.16,
+            pointX: 5.94,
             pointY: -1.62,
             estacoes_adjacentes: [
             ]
