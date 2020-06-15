@@ -1,76 +1,69 @@
 var linha_coral =  {
-        color: '#f5f10a',
-        circle_color: '#0001',
+        color: '#ef4720',
+        circle_color: '#000',
         estacoes: [
             {
                 id: 'dom_bosco',
                 name: 'Dom Bosco',
-                pointX: 1,
-                pointY: 0,
+                pointX: 11.08,
+                pointY: -1.82,
                 estacoes_adjacentes: [
-                    'corinthias_itaquera',
                     'jose_bonifacio'
                 ]
             }, {
                 id: 'jose_bonifacio',
                 name: 'Jose Boniacio',
-                pointX: 1.5,
-                pointY: 0,
+                pointX: 11.38,
+                pointY: -1.82,
                 estacoes_adjacentes: [
-                    'dom_bosco',
                     'guaianases'
                 ]
             }, {
                 id: 'guaianases',
                 name: 'Guaianases',
-                pointX: 2,
-                pointY: 0,
+                pointX: 11.68,
+                pointY: -1.82,
                 estacoes_adjacentes: [
-                    'jose_bonifacio',
                     'antonio_gianetti_neto'                    
 
                 ]
             }, {
                 id: 'antonio_gianetti_neto',
                 name: 'Antonio Gianetti Neto',
-                pointX: 2.5,
-                pointY: 0,
+                pointX: 11.98,
+                pointY: -1.82,
                 estacoes_adjacentes: [
-                    'guaianases',
                     'ferraz_de_vasconcelos'
                 ]
             }, {
                 id: 'ferraz_de_vasconcelos',
                 name: 'Ferraz de Vasconcelos',
-                pointX: 3,
-                pointY: 0,
+                pointX: 12.16,
+                pointY: -2.02,
                 estacoes_adjacentes: [
-                    'antonio_gianetti_neto',
                     'poa'
                 ]
             }, {
                 id: 'poa',
                 name: 'Poa',
-                pointX: 3.5,
-                pointY: 0,
+                pointX: 12.34,
+                pointY: -2.2,
                 estacoes_adjacentes: [
-                    'ferraz_de_vasconcelos',
                     'calmon_viana'
                 ]
             }, {
                 id: 'suzano',
                 name: 'Suzano',
-                pointX: 4,
-                pointY: -0.2,
+                pointX: 12.86,
+                pointY: -2.4,
                 estacoes_adjacentes: [
-                    'calmon_viana',
                     'jundiapeba'
                 ]
             }, {
                 id: 'jundiapeba',
                 name: 'Jundiapeba',
-                pointX: 4.5,
-                pointY: -0.4,
+                pointX: 13.1,
+                pointY: -2.4,
                 estacoes_adjacentes: [
                     'suzano',
                     'braz_cubas'
@@ -78,8 +71,8 @@ var linha_coral =  {
             }, {
                 id: 'braz_cubas',
                 name: 'Braz Cubas',
-                pointX: 5,
-                pointY: -0.6,
+                pointX: 13.36,
+                pointY: -2.4,
                 estacoes_adjacentes: [
                     'jundiapeba',
                     'mogi_das_cruzes'
@@ -87,8 +80,8 @@ var linha_coral =  {
             }, {
                 id: 'mogi_das_cruzes',
                 name: 'Mogi das Cruzes',
-                pointX: 5.5,
-                pointY: -0.8,
+                pointX: 13.6,
+                pointY: -2.4,
                 estacoes_adjacentes: [
                     'braz_cubas',
                     'estudantes'
@@ -96,8 +89,8 @@ var linha_coral =  {
             },{
                 id: 'estudantes',
                 name: 'Estudantes',
-                pointX: 5.5,
-                pointY: -0.8,
+                pointX: 13.86,
+                pointY: -2.4,
                 estacoes_adjacentes: [
                     'mogi_das_cruzes',
                 ]

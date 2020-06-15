@@ -23,17 +23,17 @@ var linhas = [
 	especial_points,
 	linha_amarela,
 	linha_azul,
-	//linha_coral,
+	linha_coral,
 	linha_diamante,
 	linha_esmeralda,
-	//linha_jade,
+	linha_jade,
 	linha_lilas,
-	//linha_prata,
-	//linha_rubi,
-	//linha_safira,
+	linha_rubi,
+	linha_prata,
+	linha_safira,
 	linha_turquesa,
 	linha_verde,
-	//linha_vermelha
+	linha_vermelha
 ]
 
 
@@ -63,7 +63,7 @@ linhas.forEach((linha) => {
 
 linhas.forEach((linha) => {
 	linha.estacoes.forEach((node, index, nodes) => {
-		node.estacoes_adjacentes.forEach((nextStation) => {
+		node.estacoes_adjacentes.forEach((nextStation, nextStationIndex) => {
 			var proximoNode
 			g.nodes.forEach((node) => {
 				if (node.id == nextStation) {
@@ -76,7 +76,7 @@ linhas.forEach((linha) => {
 				label: String(calcularCustoG(node, proximoNode).toFixed(2)),
 				target: nextStation,
 				size: 100,
-				color: node.color ? node.color : linha.color
+				color: node.colors ? node.colors[nextStationIndex] : linha.color
 			});
 		})
 

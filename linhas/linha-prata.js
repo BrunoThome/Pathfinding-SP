@@ -1,61 +1,79 @@
 var linha_prata ={
 	color: '#c0c0c0',
-        circle_color: '#0001',
+        circle_color: '#000',
         estacoes: [
             {
-                id: 'Oratorio',
+                id: 'oratorio',
                 name: 'Oratório',
-                pointX: 1,
-                pointY: 6,
+                pointX: 9.72,
+                pointY: -0.02,
                 estacoes_adjacentes: [
-                    'Vila_Prudente',
-                    'Sao_Lucas'
+                    'sao_lucas'
                 ]
             }, {
-                id: 'Sao_Lucas',
+                id: 'sao_lucas',
                 name: 'São Lucas',
-                pointX: 1.5,
-                pointY: 6,
+                pointX: 9.94,
+                pointY: -0.02,
                 estacoes_adjacentes: [
-                    'Oratorio',
-                    'Camilo_Haddad'
+                   'camilo_haddad'
                 ]
             }, {
-                id: 'Camilo_Haddad',
+                id: 'camilo_haddad',
                 name: 'Camilo Haddad',
-                pointX: 2,
-                pointY: 6,
+                pointX: 10.16,
+                pointY: -0.02,
                 estacoes_adjacentes: [
-                    'Sao_Lucas',
-                    'Vila_Tolstoi'
+                    'vila_tolstoi'
 
                 ]
             }, {
-                id: 'Vila_Tolstoi',
+                id: 'vila_tolstoi',
                 name: 'Vila Tolstói',
-                pointX: 2.5,
-                pointY: 6,
+                pointX: 10.38,
+                pointY: -0.02,
                 estacoes_adjacentes: [
-                    'Camilo_Haddad',
-                    'Vila_Uniao'
+                    'vila_uniao'
                 ]
             }, {
-                id: 'Vila_Uniao',
+                id: 'vila_uniao',
                 name: 'Vila União',
-                pointX: 3,
-                pointY: 6,
+                pointX: 10.6,
+                pointY: -0.02,
                 estacoes_adjacentes: [
-                    'Vila_Tolstoi',
-                    'Jd_Planalto'
+                   'jd_planalto'
                 ]
             }, {
-                id: 'Jd_Planalto',
+                id: 'jd_planalto',
                 name: 'Jd. Planalto',
-                pointX: 3.5,
-                pointY: 6,
+                pointX: 10.82,
+                pointY: -0.02,
                 estacoes_adjacentes: [
-                    'Vila_Uniao'
+                    'sapopemba'
                 ]
+            },{
+                id: 'sapopemba',
+                name: 'Sapopemba',
+                pointX: 11.06,
+                pointY: -0.02,
+                estacoes_adjacentes: [
+                    'fazenda_da_junta'
+                ]
+            },{
+                id: 'fazenda_da_junta',
+                name: 'Fazenda da Junta',
+                pointX: 11.28,
+                pointY: -0.02,
+                estacoes_adjacentes: [
+                    'sao_mateus'
+                ]
+            },{
+                id: 'sao_mateus',
+                name: 'Sao Mateus',
+                pointX: 11.6,
+                pointY: -0.02,
+                estacoes_adjacentes: [
+                 ]
             }
         ]
 }

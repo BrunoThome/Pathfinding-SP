@@ -1,123 +1,103 @@
 var linha_vermelha ={
-	color: '#8b0000',
-        circle_color: '#0001',
+	color: '#f04824',
+        circle_color: '#000',
         estacoes: [
             {
-                id: 'Mal. Deodoro',
+                id: 'mal_deodoro',
                 name: 'Mal. Deodoro',
-                pointX: 1,
-                pointY: 3,
+                pointX: 4.76,
+                pointY: -1.82,
                 estacoes_adjacentes: [
-                    'Palmeiras Barra Funda'
+                    'santa_cecilia'
                 ]
-            }, {
-                id: 'Santa Cecilia',
+            },{
+                id: 'santa_cecilia',
                 name: 'Santa Cecília',
-                pointX: 1.5,
-                pointY: 3,
+                pointX: 4.94,
+                pointY: -1.64,
                 estacoes_adjacentes: [
-                    'Mal. Deodoro',
                     'republica'
                 ]
             }, {
-                id: 'Anhangabau',
+                id: 'anhangabau',
                 name: 'Anhangabaú',
-                pointX: 2,
-                pointY: 3,
+                pointX: 5.7,
+                pointY: -1.24,
                 estacoes_adjacentes: [
-                    'republica',
                     'se'
 
                 ]
             }, {
-                id: 'Pedro II',
+                id: 'pedro_II',
                 name: 'Pedro II',
-                pointX: 2.5,
-                pointY: 3,
+                pointX: 6.42,
+                pointY: -1.24,
                 estacoes_adjacentes: [
-                    'se',
                     'bras'
                 ]
             }, {
-                id: 'Bresser Mooca',
+                id: 'bresser_mooca',
                 name: 'Bresser Mooca',
-                pointX: 3,
-                pointY: 3,
+                pointX: 7.62,
+                pointY: -1.64,
                 estacoes_adjacentes: [
-                    'bras',
-                    'Belem'
+                   'belem'
                 ]
             }, {
-                id: 'Belem',
+                id: 'belem',
                 name: 'Belém',
-                pointX: 3.5,
-                pointY: 3,
+                pointX: 7.92,
+                pointY: -1.64,
                 estacoes_adjacentes: [
-                    'Bresser Mooca',
-                    'Tatuape'
+                   'tatuape'
                 ]
-            }, {
-                id: 'Tatuape',
-                name: 'Tatuapé',
-                pointX: 4,
-                pointY: 3,
-                estacoes_adjacentes: [
-                    'Belem',
-                    'Carrao'
-                ]
-            }, {
-                id: 'Carrao',
+            },{
+                id: 'carrao',
                 name: 'Carrão',
-                pointX: 4.5,
-                pointY: 3,
+                pointX: 8.62,
+                pointY: -1.64,
                 estacoes_adjacentes: [
-                    'Tatuape',
-                    'Penha'
+                   'penha'
                 ]
             }, {
-                id: 'Penha',
+                id: 'penha',
                 name: 'Penha',
-                pointX: 5,
-                pointY: 3,
+                pointX: 8.98,
+                pointY: -1.64,
                 estacoes_adjacentes: [
-                    'Carrao',
-                    'Vila Matilde'
+                    'vila_matilde'
                 ]
             }, {
-                id: 'Vila Matilde',
+                id: 'vila_matilde',
                 name: 'Vila Matilde',
-                pointX: 5.5,
-                pointY: 3,
+                pointX: 9.32,
+                pointY: -1.64,
                 estacoes_adjacentes: [
-                    'Penha',
-                    'Guilhermina Esperanca'
+                    'guilhermina_esperanca'
                 ]
             }, {
-                id: 'Guilhermina Esperanca',
+                id: 'guilhermina_esperanca',
                 name: 'Guilhermina-Esperança',
-                pointX: 6,
-                pointY: 3,
+                pointX: 9.66,
+                pointY: -1.64,
                 estacoes_adjacentes: [
-                    'Patriarca Vila Re',
-                    'Vila Matilde'
+                    'patriarca_vila_re'
                 ]
             }, {
-                id: 'Patriarca Vila Re',
+                id: 'patriarca_vila_re',
                 name: 'Patriarca-Vila Ré',
-                pointX: 6.5,
-                pointY: 3,
+                pointX: 10.02,
+                pointY: -1.64,
                 estacoes_adjacentes: [
-                    'Guilhermina Esperanca',
-                    'Artur Alvim'
+                   'artur_alvim'
                 ]
             }, {
-                id: 'Artur Alvim',
+                id: 'artur_alvim',
                 name: 'Artur Alvim',
-                pointX: 7,
-                pointY: 3,
+                pointX: 10.32,
+                pointY: -1.64,
                 estacoes_adjacentes: [
-                    'Patriarca Vila Re',
-                    'Corinthians Itaquera'
+                    'corinthians_itaquera'
                 ]
             }
         ]

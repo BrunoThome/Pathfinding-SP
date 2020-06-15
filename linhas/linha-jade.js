@@ -1,12 +1,12 @@
 var linha_jade = {
-        color: '#f5f10a',
-        circle_color: '#0001',
+        color: '#41bc51',
+        circle_color: '#000',
         estacoes: [
             {
                 id: 'aeroporto_de_guarulhos',
                 name: 'Aeroporto_de_guarulhos',
-                pointX: 1,
-                pointY: 0,
+                pointX: 11.52,
+                pointY: -6.7,
                 estacoes_adjacentes: [
                     'guarulhos_cecap'
                     
@@ -14,11 +14,10 @@ var linha_jade = {
             }, {
                 id: 'guarulhos_cecap',
                 name: 'Guarulhos Cecap',
-                pointX: 1.5,
-                pointY: 0,
+                pointX: 11.52,
+                pointY: -6.08,
                 estacoes_adjacentes: [
                     'aeroporto_de_guarulhos',
-                    'eng_goulart'
                 ]
             },
         ]
