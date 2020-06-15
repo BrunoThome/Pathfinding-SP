@@ -136,7 +136,15 @@ var especial_points = {
             estacoes_adjacentes: [
                 'carrao'
             ]
+        },{
+            id: 'bras',
+            name: 'Brás',
+            pointX: 7.12,
+            pointY: -1.66,
+            estacoes_adjacentes: [
+            ]
         }
+        
         
     ]
 }

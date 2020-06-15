@@ -61,27 +61,27 @@ linhas.forEach((linha) => {
 
 
 
-// linhas.forEach((linha) => {
-// 	linha.estacoes.forEach((node, index, nodes) => {
-// 		node.estacoes_adjacentes.forEach((nextStation) => {
-// 			var proximoNode
-// 			g.nodes.forEach((node) => {
-// 				if (node.id == nextStation) {
-// 					proximoNode = node
-// 				}
-// 			})
-// 			g.edges.push({
-// 				id: `e_${node.id}_${nextStation}_${index}`,
-// 				source: node.id,
-// 				label: String(calcularCustoG(node, proximoNode).toFixed(2)),
-// 				target: nextStation,
-// 				size: 100,
-// 				color: node.color ? node.color : linha.color
-// 			});
-// 		})
+linhas.forEach((linha) => {
+	linha.estacoes.forEach((node, index, nodes) => {
+		node.estacoes_adjacentes.forEach((nextStation) => {
+			var proximoNode
+			g.nodes.forEach((node) => {
+				if (node.id == nextStation) {
+					proximoNode = node
+				}
+			})
+			g.edges.push({
+				id: `e_${node.id}_${nextStation}_${index}`,
+				source: node.id,
+				label: String(calcularCustoG(node, proximoNode).toFixed(2)),
+				target: nextStation,
+				size: 100,
+				color: node.color ? node.color : linha.color
+			});
+		})
 
-// 	})
-// })
+	})
+})
 
 sigma.classes.graph.addMethod('neighbors', function (nodeId) {
 	var k,

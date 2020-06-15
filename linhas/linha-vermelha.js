@@ -1,5 +1,5 @@
 var linha_vermelha ={
-	color: '#8b0000',
+	color: '#f04824',
         circle_color: '#000',
         estacoes: [
             {
