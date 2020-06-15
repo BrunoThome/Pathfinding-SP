@@ -62,11 +62,12 @@ var especial_points = {
         }, {
             id: 'palmeiras_barra_funda',
             name: 'Palmeiras - Barra funda',
-            pointX: 4.56,
-            pointY: -2.2,
+            pointX: 4.72,
+            pointY: -2.35,
             estacoes_adjacentes: [
                 'julio_prestes',
-                'luz'
+                'luz',
+                'mal_deodoro'
             ]
         }, {
             id: 'se',
@@ -110,6 +111,32 @@ var especial_points = {
             estacoes_adjacentes: [
                 'Sao_Caetano_Sul'
             ]
+        },{
+            id: 'republica',
+            name: 'Republica',
+            pointX: 5.2,
+            pointY: -1.3,
+            estacoes_adjacentes: [
+                'luz',
+                'anhangabau'
+            ]
+        }, {
+            id: 'tatuape',
+            name: 'Tatuapé',
+            pointX: 4,
+            pointY: -1.48,
+            estacoes_adjacentes: [
+                'carrao'
+            ]
+        },{
+            id: 'corinthians_itaquera',
+            name: 'Corinthians Itaquera',
+            pointX: 10.36,
+            pointY: -1.54,
+            estacoes_adjacentes: [
+                'carrao'
+            ]
         }
+        
     ]
 }
