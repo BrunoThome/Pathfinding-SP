@@ -1,89 +1,81 @@
 var linha_safira = {
-        color: '#f5f10a',
-        circle_color: '#0001',
+        color: '#0c41a1',
+        circle_color: '#000',
         estacoes: [
             {
-                id: 'aracaré', //intersecção com a linha 11
-                name: 'Aracaré',
-                pointX: 1,
-                pointY: 0,
+                id: 'usp_leste',
+                name: 'USP Leste',
+                pointX: 9.62,
+                pointY: -3.02,
                 estacoes_adjacentes: [
-                    'itaquaquecetuba'
+                    'comendador_ermelino'
                 ]
-            }, {
-                id: 'itaquaquecetuba',
-                name: 'Itaquaquecetuba',
-                pointX: 1.5,
-                pointY: 0,
+            },{
+                id: 'comendador_ermelino',
+                name: 'Comendador Ermelino',
+                pointX: 9.98,
+                pointY: -3.02,
                 estacoes_adjacentes: [
-                    'aracaré',
-                    'eng_manoel_feio'
-                
+                    'sao_miguel_paulista',
                 ]
-            }, {
-                id: 'eng_manoel_feio',
-                name: 'Engenheiro Manoel Feio',
-                pointX: 2,
-                pointY: 0,
+            },{
+                id: 'sao_miguel_paulista',
+                name: 'Sao Miguel Paulista',
+                pointX: 10.32,
+                pointY: -3.02,
                 estacoes_adjacentes: [
-                    'itaquaquecetuba',
-                    'jardim_romano',
-
-                ]
-            }, {
-                id: 'jardim_romano',
-                name: 'Jardim Romano',
-                pointX: 2.5,
-                pointY: 0,
-                estacoes_adjacentes: [
-                    'eng_manoel_feio',
-                    'itaim_paulista'
-                ]
-            }, {
-                id: 'itaim_paulista',
-                name: 'Itaim Paulista',
-                pointX: 3,
-                pointY: 0,
-                estacoes_adjacentes: [
-                    'jardim_romano',
-                    'jardim_helena'
+                    'jardim_helena',
                 ]
             }, {
                 id: 'jardim_helena',
                 name: 'Jardim Helena - Vila Mara',
-                pointX: 3.5,
-                pointY: 0,
+                pointX: 10.68,
+                pointY: -3.02,
                 estacoes_adjacentes: [
                     'itaim_paulista',
-                    'sao_miguel_paulista'
-                ]
-            }, {
-                id: 'sao_miguel_paulista',
-                name: 'Sao Miguel Paulista',
-                pointX: 4,
-                pointY: -0.2,
-                estacoes_adjacentes: [
-                    'jardim_helena',
-                    'comendador_ermelino'
-                ]
-            }, {
-                id: 'comendador_ermelino',
-                name: 'Comendador Ermelino',
-                pointX: 4,
-                pointY: -0.2,
-                estacoes_adjacentes: [
-                    'sao_miguel_paulista',
-                    'usp_leste'
                 ]
             },{
-                id: 'usp_leste',
-                name: 'USP Leste',
-                pointX: 4,
-                pointY: -0.2,
+                id: 'itaim_paulista',
+                name: 'Itaim Paulista',
+                pointX: 11.04,
+                pointY: -3.02,
                 estacoes_adjacentes: [
-                    'eng_goulart',
-                    'comendador_ermelino'
+                    'jardim_romano',
                 ]
-            },
+            }, {
+                id: 'jardim_romano',
+                name: 'Jardim Romano',
+                pointX: 11.4,
+                pointY: -3.02,
+                estacoes_adjacentes: [
+                    'eng_manoel_feio',
+                ]
+            }, {
+                id: 'eng_manoel_feio',
+                name: 'Engenheiro Manoel Feio',
+                pointX: 11.76,
+                pointY: -3.02,
+                estacoes_adjacentes: [
+                    'itaquaquecetuba',
+
+                ]
+            },{
+                id: 'itaquaquecetuba',
+                name: 'Itaquaquecetuba',
+                pointX: 12.02,
+                pointY: -2.88,
+                estacoes_adjacentes: [
+                    'aracaré',
+                
+                ]
+            },{
+                id: 'aracaré', //intersecção com a linha 11
+                name: 'Aracaré',
+                pointX: 12.22,
+                pointY: -2.7,
+                estacoes_adjacentes: [
+                    'calmon_viana'
+                ]
+            },    
         ]
     }

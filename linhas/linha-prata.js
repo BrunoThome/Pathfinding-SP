@@ -1,6 +1,6 @@
 var linha_prata ={
 	color: '#c0c0c0',
-        circle_color: '#0001',
+        circle_color: '#000',
         estacoes: [
             {
                 id: 'oratorio',
