@@ -94,7 +94,7 @@ linhas.forEach((linha) => {
 			label: estacao.name,
 			x: estacao.pointX,
 			y: estacao.pointY,
-			size: 1,
+			size: 0.8,
 			color: linha.circle_color
 		})
 	})
@@ -121,6 +121,7 @@ linhas.forEach((linha) => {
 				id: `e_${node.id}_${nextStation}_${index}`,
 				source: node.id,
 				target: nextStation,
+				size: 100,
 				label: String(calcularCustoG(node, proximoNode).toFixed(2)),
 				color: node.colors ? node.colors[nextStationIndex] : linha.color
 			});
@@ -142,9 +143,9 @@ var s = new sigma({
 	}, 
 	settings: {
 		labelThreshold: 15,
-		edgeLabelSize: 'fixed',
+		edgeLabelSize: 'proportional', 
 		defaultNodeColor: "#000",
-		edgeLabelThreshold: 2,
+		edgeLabelThreshold: 1.9,
 
 	}
 });

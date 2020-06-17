@@ -15,7 +15,7 @@
   sigma.canvas.edges.def = function(edge, source, target, context, settings) {
     var color = edge.color,
         prefix = settings('prefix') || '',
-        size = edge[prefix + 'size'] || 5,
+        size = 5,
         edgeColor = settings('edgeColor'),
         defaultNodeColor = settings('defaultNodeColor'),
         defaultEdgeColor = settings('defaultEdgeColor');

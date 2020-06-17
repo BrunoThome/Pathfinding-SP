@@ -20,7 +20,7 @@
     // {string}
     defaultEdgeLabelActiveColor: '#000',
     // {string}
-    defaultEdgeLabelSize: 10,
+    defaultEdgeLabelSize: 8,
     // {string} Indicates how to choose the edge labels size. Available values:
     //          "fixed", "proportional"
     edgeLabelSize: 'fixed',
@@ -29,7 +29,7 @@
     // Math.pow(size, -1 / edgeLabelSizePowRatio) * size * defaultEdgeLabelSize
     edgeLabelSizePowRatio: 1,
     // {number} The minimum size an edge must have to see its label displayed.
-    edgeLabelThreshold: 1,
+    edgeLabelThreshold: 1 ,
   };
 
   // Export the previously designed settings:
