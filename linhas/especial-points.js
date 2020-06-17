@@ -188,7 +188,7 @@ var especial_points = {
                 'guarulhos_cecap',
                 'usp_leste'
             ],
-            colors: ['#41bc51', '#f04824']
+            colors: ['#41bc51', '#0c41a1']
         }
         
         
