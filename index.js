@@ -130,11 +130,6 @@ linhas.forEach((linha) => {
 })
 
 
-
-
-
-
-
 /** Cria um objeto da classe sigma, passando a lista de estações e suas ligações
  * 	também recebe algumas configurações de renderização e o elemento html onde 
  * 	esse grafo vai ser renderizado
@@ -147,8 +142,9 @@ var s = new sigma({
 	}, 
 	settings: {
 		labelThreshold: 15,
+		edgeLabelSize: 'fixed',
 		defaultNodeColor: "#000",
-		edgeLabelThreshold: 1.9,
+		edgeLabelThreshold: 2,
 
 	}
 });
@@ -209,7 +205,15 @@ function showPath() {
 	 * 	nós fechados e o valor total do caminho
 	 */
 	results = findPath(startNode, endNode);
-	var { finalPath, openList, closedList, totalValue } = results;
+	var {finalPath} = results
+	/** Verifica se o findPath retorno um path valido, caso contrario altera o total value
+	 * 	para "Caminho não encontrado" e encerra a execução
+	 */
+	if(finalPath == null){		
+		document.querySelector("#totalValue").innerHTML = "Caminho não encontrado";
+		return false
+	}
+	var { openList, closedList, totalValue, stateList } = results;
 
 	/** Novamente percorre a lista de nós da instância e vê qual deles está incluido na
 	 * 	lista de ids do caminho final, se ele existir no caminho final adiciona ele na ordem
@@ -226,6 +230,7 @@ function showPath() {
 		}
 
 	});
+	
 
 	/** Para cada nó da lista de nós do caminho, adiciona um timeout de 100 ms multiplicado pelo
 	 * 	index do nó na lista de nós, esse timeout é para causar a impressão de algo sequencial
@@ -269,8 +274,11 @@ function showPath() {
 			domElementOpenList.innerHTML += `<li>${node.name}</li>`
 		})
 
-		domElementTotalValue.innerHTML = totalValue
+		domElementTotalValue.innerHTML = totalValue + " Unidades de medida"
+		document.querySelectorAll('.slider').forEach((element) => element.classList.remove('d-none'))
+		document.querySelector('#show-estados').classList.remove('d-none')
 	}, nodesPath.length * 100)
+
 
 
 }
@@ -286,14 +294,14 @@ function showPath() {
 function destacarNos(s, nodeList, color = null) {
 	var nodeListId = nodeList.map((node) => node.id)
 
-	s.graph.nodes().forEach(function (node) {
+	s.graph.nodes().forEach(function (node,index) {
 		if (nodeListId.includes(node.id)) {
-			if (!color) {
-				node.color = node.previousColor;
-			} else {
-				node.previousColor = node.color;
-				node.color = color;
-			}
+				if (!color) {
+					node.color = node.previousColor;
+				} else {
+					node.previousColor = node.color;
+					node.color = color;
+				}			
 		}
 
 	});
@@ -350,6 +358,22 @@ function handleDestacarFechados(event) {
 }
 
 
+/** Adiciona todos os estados da execução em sequencia e ativa um modal para exibir */
+function exibirEstados(){
+	var {stateList} = results
+
+	const bodyModal = document.querySelector("#modal-espaco-estados")
+	stateList.forEach((state, index) => {
+		if(index < stateList.length - 1){
+			bodyModal.innerHTML += `${state.name} </br> ↓ </br>`
+		}else{			
+			bodyModal.innerHTML += `${state.name}`
+		}
+	} )
+	
+	
+	$('#exampleModal').modal('toggle')	
+}
 
 /** Função para apagar da tela todas as informações que vão ser preenchidas pela nova
  * 	execução da busca, é executada sempre antes de uma nova busca
@@ -357,7 +381,7 @@ function handleDestacarFechados(event) {
 function resetInfos() {
 	document.querySelector("#openList").innerHTML = "";
 	document.querySelector("#closedList").innerHTML = "";
-	document.querySelector("#totalValue").innerHTML = "0";
+	document.querySelector("#totalValue").innerHTML = "0 Unidades de Medida";
 	document.querySelector("#startNode").innerHTML = "";
 	document.querySelector("#endNode").innerHTML = "";
 	document.querySelector("#changeNosAbertos").checked = false;

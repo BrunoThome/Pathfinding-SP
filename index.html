@@ -172,7 +172,7 @@
           <h6>Lista Nós abertos</h6> 
           <label class="switch">
             <input type="checkbox" id="changeNosAbertos" onchange="handleDestacarAbertos(this)">
-            <span class="slider round"></span>
+            <span class="slider round d-none"></span>
           </label>
         </div>
        
@@ -186,7 +186,7 @@
           <h6>Lista Nós Fechados</h6> 
           <label class="switch">
             <input type="checkbox" id="changeNosFechados" onchange="handleDestacarFechados(this)">
-            <span class="slider round"></span>
+            <span class="slider round d-none"></span>
           </label>
         </div>
         <ul id="closedList" style="height: 20vh; overflow-y: scroll;">
@@ -194,7 +194,14 @@
         </ul>
       </div>
       <div class="col-3" >
-        <h6>Custo total = <span id="totalValue">0</span> Unidades de Medida</h6>
+        <div class="row">
+          <h6>Custo total = <span id="totalValue">0 Unidades de Medida</span> </h6>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-primary d-none" id="show-estados" onclick="exibirEstados()">
+            Exibir estados da execução
+          </button>
+        </div>
       </div>
     </div>
 
@@ -203,6 +210,23 @@
     </div>
   </div>
 
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Estados da execução</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modal-espaco-estados">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="find_path.js"></script>
   <script src="index.js"></script>
